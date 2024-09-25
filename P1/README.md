@@ -1,3 +1,4 @@
-# EL PEIBOL
+# Preguntas y respuestas propuestas a las IAs:
 
-Holaaaa
+# Ejercicio 1.
+Abc
