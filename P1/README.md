@@ -18,4 +18,14 @@ Resp1: Sí:
 for word in words_to_replace:
   word_lower = word.lower()
 
-Preg2: 
+Preg2: Cuál es la diferencia de hacer el 'for word in text' con .split() al final?
+Resp2: Se añade .split() para que se cuenten las palabras y sin .split() se cuentan las letras
+
+Preg3: ¿Estás de acuerdo con que la parte más importante del código es el .replace?
+Resp3: Sí, porque es lo que hace cambiar la palabra por asteriscos, cubriendo todas las letras.
+
+# Ejercicio 3.
+
+Preg1:
+
+
