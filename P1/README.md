@@ -18,10 +18,10 @@ Resp1: Sí:
 for word in words_to_replace:
   word_lower = word.lower()
 
-Preg2: Cuál es la diferencia de hacer el 'for word in text' con .split() al final?
-Resp2: Se añade .split() para que se cuenten las palabras y sin .split() se cuentan las letras.
+Preg2: Cuál es la diferencia de hacer el 'for word in text' con '.split()' al final?
+Resp2: Se añade '.split()' para que se cuenten las palabras y sin '.split()' se cuentan las letras.
 
-Preg3: ¿Estás de acuerdo con que la parte más importante del código es el .replace?
+Preg3: ¿Estás de acuerdo con que la parte más importante del código es el '.replace'?
 Resp3: Sí, porque es lo que hace cambiar la palabra por asteriscos, cubriendo todas las letras.
 
 # Ejercicio 3.
@@ -32,6 +32,26 @@ Resp1: Contando que el número es mayor que 1, se comprueba si el número a prob
 Preg2: ¿'.append' mete directamente los números seguidos con comas?
 Resp2: Sí.
 
-Preg3: 
+Preg3: ¿Qué hace exactamente 'str' y por qué es necesario?
+Resp3: 'str' convierte el número en cadena, y es necesario para comparar dos cadenas, aunque estemos tratando con números en el ejercicio.
+
+
+Preg4: ¿Me puedes explicar la sintaxis '[::-1]'?
+Resp4: Significa '[start:stop:step]' donde  'start' es el comienzo, 'stop' el final (sin incluir) y 'step' el método de avance.
+Dado que 'start' y 'stop' están vacíos, se coge toda la cadena 'str(prime)' y se avanza de detrás a adelante (-1) en vez de delante a detrás. 'str(prime)' sin '[]' indica que se coge toda la cadena de delante a detrás.
+
+Preg5: ¿Cuál es el método clave para añadir en un diccionario una lista elemento a elemento?
+Resp5: 'categorized_primes[category].append(prime)'.
+
+Preg6: Explícame qué hace esta parte de código en la que imprime los tamaños de números primos:
+ for category, numbers in categorized_primes.items():
+        print(f"{category.capitalize()}: {numbers}")
+Resp6: Es un iterador de pares clave-valor para el diccionaro 'categorized_primes'.
+
+Preg7: ¿Y qué hace 'category.capitalize()'?
+Resp7: Es un método que convierte la primera letra de la categoría en mayúscula y el resto en minúscula. Para que, por ejemplo, 'pequeños:' se convierta en 'Pequeños:'.
+
+Preg8: ¿Qué puedo cambiar si quiero que el límite de números primos sea elegido por el usuario?
+Resp: Puedes añadir un 'input()' y que el límite sea <= 2.
 
 
