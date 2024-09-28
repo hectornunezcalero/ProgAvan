@@ -15,8 +15,8 @@ Resp3: continue se usa para salir de una condición y break para salir de un buc
 
 Preg1: ¿Hay otra manera de expresar 'word.lower() for word in words_to_replace'?<br>
 Resp1: Sí:<br>
-for word in words_to_replace:<br>
-  <div>word_lower = word.lower()
+  for word in words_to_replace:<br>
+    word_lower = word.lower()
 
 Preg2: Cuál es la diferencia de hacer el 'for word in text' con '.split()' al final?<br>
 Resp2: Se añade '.split()' para que se cuenten las palabras y sin '.split()' se cuentan las letras.
@@ -43,8 +43,8 @@ Preg5: ¿Cuál es el método clave para añadir en un diccionario una lista elem
 Resp5: 'categorized_primes[category].append(prime)'.
 
 Preg6: Explícame qué hace esta parte de código en la que imprime los tamaños de números primos:<br>
-for category, numbers in categorized_primes.items():<br>
-  <div>print(f"{category.capitalize()}: {numbers}")<br>
+  for category, numbers in categorized_primes.items():<br>
+    print(f"{category.capitalize()}: {numbers}")<br>
 Resp6: Es un iterador de pares clave-valor para el diccionaro 'categorized_primes'.
 
 Preg7: ¿Y qué hace 'category.capitalize()'?<br>
