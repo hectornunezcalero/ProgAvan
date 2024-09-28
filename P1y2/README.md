@@ -55,5 +55,15 @@ Dado que 'start' y 'stop' están vacíos, se coge toda la cadena 'str(prime)' y 
 
 # Ejercicio 4.
 
-**Preg1:**
-**Resp1:**
+**Preg1:** ¿Por qué usas en la entrada de datos 'map()'?<br>
+**Resp1:** Es para convertir la lista de cadenas que devuelve '.split'  a un objeto iterable enteros.
+
+**Preg2:** ¿Y list()?<br>
+**Resp2:** Convierte ese objeto iterable de enteros a una lista.
+
+**Preg3:** ¿Cómo compruebas que no hay números repetidos?<br>
+**Resp3:** La función 'son_unicos()' devuelve True si se cumple que la lista original es la misma que la lista con 'set()', que es la que elimina elementos repetidos. Y devuelve False si nota que hay elementos que sobran (repetidos).
+
+# Ejericio 5.
+
+**Preg1:** <br>
