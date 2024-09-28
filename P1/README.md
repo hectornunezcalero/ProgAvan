@@ -2,13 +2,11 @@
 
 # Ejercicio 1.
 
-Preg1: ¿qué intervalos coge range si pongo range(1, 6)?
-
+Preg1: ¿qué intervalos coge range si pongo range(1, 6)?<br>
 Resp1: range cuenta desde el 1 incluido hasta el 6 sin incluir
 
 
-Preg2: ¿Es lo mismo poner continue que exit?
-
+Preg2: ¿Es lo mismo poner continue que exit?<br>
 Resp2: No. continue sale de una condición y exit() del programa entero.
 
 
@@ -55,7 +53,7 @@ Resp3: 'str' convierte el número en cadena, y es necesario para comparar dos ca
 Preg4: ¿Me puedes explicar la sintaxis '[::-1]'?
 
 Resp4: Significa '[start:stop:step]' donde  'start' es el comienzo, 'stop' el final (sin incluir) y 'step' el método de avance.
-Dado que 'start' y 'stop' están vacíos, se coge toda la cadena 'str(prime)' y se avanza de detrás a adelante (-1) en vez de delante a detrás. 'str(prime)' sin '[]' indica que se coge toda la cadena de delante a detrás.
+Dado que 'start' y 'stop' están vacíos, se coge toda la cadena 'str(prime)' y se avanza de detrás a adelante (-1) en vez de delante a detrás. 'str(prime)' sin '[ ]' indica que se coge toda la cadena de delante a detrás.
 
 
 Preg5: ¿Cuál es el método clave para añadir en un diccionario una lista elemento a elemento?
