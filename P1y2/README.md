@@ -69,7 +69,7 @@ Dado que 'start' y 'stop' están vacíos, se coge toda la cadena 'str(prime)' y 
 **Preg1:** ¿Podría cambiar en 'list_tasks' el método 'enumerate(tasks, start=1)' por 'range(1, len(task))'?<br>
 **Resp1:** Sí, pero también habría que modificar el print:<br>
     for task in range(1, len(tasks) + 1): # desde 1 hasta la longitud de tasks+1 (para incluirlo)<br>
-        print(f"{task}. {tasks[task-1]}") # task-1 para empezar por el elemento 0
+      print(f"{task}. {tasks[task-1]}") # task-1 para empezar por el elemento 0
 
 # Ejercicio 6.
 
@@ -79,3 +79,8 @@ Dado que 'start' y 'stop' están vacíos, se coge toda la cadena 'str(prime)' y 
 **Preg2** ¿Qué diferencia hay entre 'is' y '==' en la función 'verificar_mismo_objeto'?<br>
 **Resp2** '==' se utiliza para comprobar si ambos valores/cadenas son las mismas en términos de cifras/letras. En cambio 'is' comprueba si ambos valores/cadenas están apuntando al mismo objetivo:<br>
 En variables numéricas, si usamos 'is' no debería funcionar, ya que a diferencia de las cadenas, python no obliga a que si hay variables repetidas éstas apunten a la misma dirección en donde se haya el dato. En cambio, en cadenas esto sí ocurre para ahorrar espacio.
+
+**Preg3** ¿Qué hacen en el código .split() y .split(',')?<br>
+**Resp3** El método .split(",") (separados por) toma la entrada del usuario y la separa en una lista de cadenas, dividiendo el texto en cada coma. Si el usuario ingresó: hola, mundo, python; el resultado será: ['hola', ' mundo', ' python'].<br>
+El método .strip() (eliminar) elimina los espacios en blanco al inicio y al final de cada cadena. En el ejemplo anterior, los elementos de la lista serían transformados de ['hola', ' mundo', ' python'] a ['hola', 'mundo', 'python'].<br>
+También existe .split() (separados por) donde, al estar vacío, toma la entrada del usuario y la separa en una lista de cadenas, dividiendo el texto separado por espacios. Si el usuario ingresó: hola mundo python; el resultado será: ['hola', ' mundo', ' python'].
