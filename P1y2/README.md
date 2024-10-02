@@ -66,4 +66,4 @@ Dado que 'start' y 'stop' están vacíos, se coge toda la cadena 'str(prime)' y 
 
 # Ejericio 5.
 
-**Preg1:** <br>
+**Preg1:** ¿Por qué en ?<br>
