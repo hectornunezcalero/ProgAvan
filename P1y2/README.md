@@ -75,3 +75,7 @@ Dado que 'start' y 'stop' están vacíos, se coge toda la cadena 'str(prime)' y 
 
 **Preg1:** ¿Qué hace 'key=len' en 'max' y 'min'?<br>
 **Resp1:** Declara que la comparación para hallar el máximo y el mínimo sea la longitud de palabras, no el valor numérico (al tratar con cadenas y no números)
+
+**Preg2** ¿Qué diferencia hay entre 'is' y '==' en la función 'verificar_mismo_objeto'?<br>
+**Resp2** '==' se utiliza para comprobar si ambos valores/cadenas son las mismas en términos de cifras/letras. En cambio 'is' comprueba si ambos valores/cadenas están apuntando al mismo objetivo:<br>
+En variables numéricas, si usamos 'is' no debería funcionar, ya que a diferencia de las cadenas, python no obliga a que si hay variables repetidas éstas apunten a la misma dirección en donde se haya el dato. En cambio, en cadenas esto sí ocurre para ahorrar espacio.
