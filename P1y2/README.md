@@ -67,8 +67,8 @@ Dado que 'start' y 'stop' están vacíos, se coge toda la cadena 'str(prime)' y 
 # Ejericio 5.
 
 **Preg1:** ¿Podría cambiar en 'list_tasks' el método 'enumerate(tasks, start=1)' por 'range(1, len(task))'?<br>
-**Resp1:** Sí, pero también habría que modificar el print:
-    for task in range(1, len(tasks) + 1): # desde 1 hasta la longitud de tasks+1 (para incluirlo)
+**Resp1:** Sí, pero también habría que modificar el print:<br>
+    for task in range(1, len(tasks) + 1): # desde 1 hasta la longitud de tasks+1 (para incluirlo)<br>
         print(f"{task}. {tasks[task-1]}") # task-1 para empezar por el elemento 0
 
 # Ejercicio 6.
