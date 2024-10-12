@@ -20,6 +20,3 @@
 
 **Preg7:** <br>
 **Resp7:** 
-
-**Preg8:** <br>
-**Resp8:** 
