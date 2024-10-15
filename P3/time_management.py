@@ -109,7 +109,10 @@ def main():
         elif option == "3":
             time_str = input("Enter time string (format HH:MM:SS FORMAT): ")
             current_time = Time.from_string(time_str)
-            print("Time created successfully.")
+            if current_time:
+                print("Time created successfully.")
+            else:
+                print("Failed to create time.")
 
         elif option == "4":
             print("Exiting program.")
