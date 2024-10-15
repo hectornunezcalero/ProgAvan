@@ -21,14 +21,15 @@ class Time:
         return False
 
     def __is_24hour_format(self):
-        return self.format == "24 HOURS"
+        if self.format == "24 HOURS":
+            return True
+        return False
 
     def _is_valid_time(self):
-        if self.format in ("AM", "PM"):
-            return 1 <= self.hours <= 12 and 0 <= self.minutes < 60 and 0 <= self.seconds < 60
-        elif self.format == "24 HOURS":
-            return 0 <= self.hours < 24 and 0 <= self.minutes < 60 and 0 <= self.seconds < 60
-        return False
+        if self.__is_24hour_format() == True:
+            return 0 <= self.hours < 23 and 0 <= self.minutes < 59 and 0 <= self.seconds < 59
+        else:
+            return 1 <= self.hours <= 12 and 0 <= self.minutes < 59 and 0 <= self.seconds < 59
 
     def set_time(self, nHoras, nMinutos, nSegundos, pszFormato):
         if self.__asign_format(pszFormato):
@@ -108,6 +109,7 @@ def main():
         elif option == "3":
             time_str = input("Enter time string (format HH:MM:SS FORMAT): ")
             current_time = Time.from_string(time_str)
+            print("Time created successfully.")
 
         elif option == "4":
             print("Exiting program.")
