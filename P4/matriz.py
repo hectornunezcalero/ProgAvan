@@ -113,8 +113,10 @@ def operaciones_con_matrices(matriz):
                 filas = matriz._m_nFilas
                 columnas = matriz._m_nColumnas
                 otra_matriz.CrearMatriz(filas, columnas)
+                
                 print("Introduce los valores para la segunda matriz:")
                 otra_matriz.Introducir()
+                
                 resultado = matriz.SumarMatrices(otra_matriz)
                 
                 if resultado is not None:
@@ -126,8 +128,10 @@ def operaciones_con_matrices(matriz):
                 filas = matriz._m_nFilas
                 columnas = matriz._m_nColumnas
                 otra_matriz.CrearMatriz(filas, columnas)
+                
                 print("Introduce los valores para la segunda matriz:")
                 otra_matriz.Introducir()
+                
                 resultado = matriz.RestarMatrices(otra_matriz)
 
                 if resultado is not None:
