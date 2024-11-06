@@ -1,4 +1,5 @@
 def leer_int(prompt: str) -> int:
+    # Lee un número entero del usuario con manejo de errores.
     while True:
         try:
             return int(input(prompt))
@@ -6,6 +7,7 @@ def leer_int(prompt: str) -> int:
             print("Error: Debes ingresar un número entero.")
 
 def leer_float(prompt: str) -> float:
+    # Lee un número flotante del usuario con manejo de errores.
     while True:
         try:
             return float(input(prompt))
@@ -13,6 +15,7 @@ def leer_float(prompt: str) -> float:
             print("Error: Debes ingresar un número flotante.")
 
 def crear_menu(options: list) -> int:
+    # Crea un menú numerado y solicita al usuario seleccionar una opción.
     print("\nMenú de opciones:")
     for i, option in enumerate(options, 1):
         print(f"{i}. {option}")
