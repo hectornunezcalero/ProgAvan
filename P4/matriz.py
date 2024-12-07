@@ -1,6 +1,6 @@
 # Práctica 4: Arrays
 
-from numpy import zeros  # Importación para facilitar las acciones con matrices
+import numpy  # Importación para facilitar las acciones con matrices
 
 class CMatFloat:  # Clase que representa una matriz dinámica 1D/2D
     
